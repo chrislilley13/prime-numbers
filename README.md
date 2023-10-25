@@ -8,6 +8,7 @@ Write a test module called test_prime.py
 Write a module called prime.py
 Create an iterable class called prime_factors which requires a single positional argument as a constructor
 Requirements & build steps
+
 Step 1:
 Write a test that asserts that when prime_factors is called with a data type that is not an integer (e.g. a string or float), a ValueError is raised. Write the appropriate code to solve this and then commit the changes.
 
