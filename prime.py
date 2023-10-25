@@ -9,24 +9,21 @@ def generate_prime_factors(num):
     if not isinstance(num, int):
         raise ValueError("Enter only integers")
 
-    prime = []
 
     # returns empty string for 1
     if num == 1:
-        return []
+        return
 
     while num % 2 == 0:
-        prime.append(2) 
+        yield 2
         num //= 2
 
     x = 3
     while x * x <= num:
         while num % x == 0:
-            prime.append(x)
+            yield x
             num //= x
         x += 2
 
     if num > 2:
-        prime.append(num)
-
-    return prime
+        yield num
